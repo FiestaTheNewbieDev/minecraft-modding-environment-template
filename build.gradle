@@ -95,11 +95,13 @@ minecraft {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
+    flatDir {
+        dirs '/libs'
+    }
 }
 
 dependencies {
     minecraft 'net.minecraftforge:forge:1.18.2-40.1.0'
-    implementation fileTree(dir: 'libs', includes: ['*.jar'])
 }
 
 jar {
