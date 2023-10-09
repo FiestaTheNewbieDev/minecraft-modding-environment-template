@@ -1,0 +1,32 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+license="All rights reserved"
+
+[[mods]]
+modId="example"
+version="${file.jarVersion}"
+displayName="Example"
+#displayURL=""
+#logoFile=""
+#credits=""
+authors="FiestaTheNewbieDev"
+description=""
+
+[[dependencies.example]] #optional
+    # the modid of the dependency
+    modId="forge" #mandatory
+    # Does this dependency have to exist - if not, ordering below must be specified
+    mandatory=true #mandatory
+    # The version range of the dependency
+    versionRange="[40,)" #mandatory
+    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+    ordering="NONE"
+    # Side this dependency is applied on - BOTH, CLIENT or SERVER
+    side="BOTH"
+
+[[dependencies.example]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2,)"
+    ordering="NONE"
+    side="BOTH"

@@ -17,7 +17,7 @@ apply plugin: 'net.minecraftforge.gradle'
 
 version = '1.0'
 group = 'fr.fiesta.example'
-archivesBaseName = 'example'
+archivesBaseName = 'Example'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
@@ -107,7 +107,7 @@ dependencies {
 jar {
     manifest {
         attributes([
-                "Specification-Title"     : "example",
+                "Specification-Title"     : "Example",
                 "Specification-Vendor"    : "FiestaTheNewbieDev",
                 "Specification-Version"   : "1",
                 "Implementation-Title"    : project.name,
